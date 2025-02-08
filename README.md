@@ -11,7 +11,8 @@ Utilized VirtualBox to create two virtual machines: one using Windows Server 201
 
 <h2>Technologies Used</h2>
 
-- <b>Active Directory</b> 
+- <b>Active Directory</b>
+- <b>Oracle VirtualBox</b>
 - <b>Windows Server 2019</b>
 - <b>Windows 10 Enterprise</b>
 - <b>Powershell</b>
