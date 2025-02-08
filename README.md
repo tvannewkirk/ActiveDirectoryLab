@@ -2,8 +2,6 @@
 
 <h1>Active Directory Virtual Machines Project</h1>
 
- ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
-
 <h2>Description</h2>
 Utilized VirtualBox to create two virtual machines: one using Windows Server 2019 acting as the domain controller, and another virtual machine using Windows 10 Enterprise acting as a workstation in the domain.
 <br />
