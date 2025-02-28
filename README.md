@@ -13,7 +13,9 @@ I opened Active Directory Users and Computers to create a domain administrator a
 <br/><br/>
 To install Network Address Translation, I opened Server Manager and selected add roles and features. For Installation Type, I selected role based installation. For Server Selection, I chose the name of the server. For Server Roles, I selected Remote Access. For Role Services, I selected Routing and advanced through the wizard to complete the role installation. I selected Routing and Remote Access inside of Tools within Server Manager. Next, I right-clicked the name of the domain controller and selected Configure and Enable Routing and Remote Access. I selected Network Address Translation. For Network Address Translation settings, I selected use this public interface to connect to the internet and selected the name of the adapter connecting to the Wi-Fi card. I completed the wizard to complete the installation.
 <br/><br/>
-To install Dynamic Host Configuration Protocol, I opened Server Manager and selected add roles and features. For Installation Type and Server Selection, I followed the same steps as before. For Server Roles, I selected DHCP and selected add features. Then I completed the wizard to install the DHCP role. This allows the domain controller to automatically assign IP addresses to client machines within the domain.
+To install Dynamic Host Configuration Protocol, I opened Server Manager and selected add roles and features. For Installation Type and Server Selection, I followed the same steps as before. For Server Roles, I selected DHCP and selected add features. Then I completed the wizard to install the DHCP role. This allows the domain controller to automatically assign IP addresses to client machines within the domain. Next, I opened DHCP within Tools, right-clicked on the DHCP Server, right-clicked IPV4 and selected new scope. I defined the scope as starting at 172.16.0.100 and ending at 172.16.0.200. I gave the scope a subnet mask of /24. I did not exclude any IP addresses and I specified a lease time of eight days. I selected that I want to configure DHCP options for the scope. For Default Gateway Settings, I entered the IP address of the adapter connected to the client which was 172.16.0.1 and selected add. To finish the configuration, I selected that I want to activate the scope.
+<br/><br/>
+I created another virtual machine within VirtualBox named Windows 10 Workstation and connected the network adapter to the internal network. For this virtual machine, I used the Windows 10 Enterprise .iso file I downloaded from Microsoft Evaluation Center. Next, I logged into the client virtual machine and right-clicked on the start button. Then I selected System and Rename this PC (advanced). I clicked on change and then selected domain beneath member of and typed the name of the domain. I entered Administrator credentials after being prompted and the client joined the domain successfully.
 <br />
 
 
@@ -23,19 +25,7 @@ To install Dynamic Host Configuration Protocol, I opened Server Manager and sele
 - <b>Oracle VirtualBox</b>
 - <b>Windows Server 2019</b>
 - <b>Windows 10 Enterprise</b>
-- <b>Powershell</b>
 
 
-<h2>Project walk-through:</h2>
-
-<p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-</p>
 
 
