@@ -13,7 +13,10 @@ To install Active Directory Domain Services, I navigated to Server Manager and c
 <img width="985" height="694" alt="Screenshot 2025-12-11 214114" src="https://github.com/user-attachments/assets/f217649b-6b95-4755-96e7-5bef1aa0f73e" />
 </p>
 <br/><br/>
-I opened Active Directory Users and Computers to create a domain administrator account. Next, I right-clicked the domain name and selected new Organizational Unit and named it ADMINS. I right-clicked the Organizational Unit, selected new User and assigned the user my name. Next, I right-clicked the user, selected Properties, Member Of, Add and typed domain admins to make the account a domain administrator.
+I opened Active Directory Users and Computers to create an Organizational Unit called _EMPLOYEES. Next, I created another Organizational Unit and named it _ADMINS. I right-clicked the Organizational Unit, selected new User and called the user Jane Doe. I assigned the account a username of jane_admin and a password of Cyberlab123!. Next, I right-clicked the user, selected Properties, Member Of, Add and typed domain admins to make the account a domain administrator.
+<p>
+<img width="1170" height="597" alt="Screenshot 2025-12-31 015025" src="https://github.com/user-attachments/assets/7599d45e-671b-47e3-8326-c60469b365a3" />
+</p>
 <br/><br/>
 To install Network Address Translation, I opened Server Manager and selected add roles and features. For Installation Type, I selected role based installation. For Server Selection, I chose the name of the server. For Server Roles, I selected Remote Access. For Role Services, I selected Routing and advanced through the wizard to complete the role installation. I selected Routing and Remote Access inside of Tools within Server Manager. Next, I right-clicked the name of the domain controller and selected Configure and Enable Routing and Remote Access. I selected Network Address Translation. For Network Address Translation settings, I selected use this public interface to connect to the internet and selected the name of the adapter connecting to the Wi-Fi card. I completed the wizard to complete the installation.
 <br/><br/>
