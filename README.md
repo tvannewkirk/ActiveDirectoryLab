@@ -25,6 +25,9 @@ To install Dynamic Host Configuration Protocol, I opened Server Manager and sele
 I created another virtual machine within VirtualBox named Windows 10 Workstation and connected the network adapter to the internal network. For this virtual machine, I used the Windows 10 Enterprise .iso file I downloaded from Microsoft Evaluation Center. Next, I logged into the client virtual machine and right-clicked on the start button. Then I selected System and Rename this PC (advanced). I clicked on change and then selected domain beneath member of and typed the name of the domain. I entered Administrator credentials after being prompted and the client joined the domain successfully.
 <br />
 
+<h2>Languages Used</h2>
+
+- <b>Powershell</b>
 
 <h2>Technologies Used</h2>
 
