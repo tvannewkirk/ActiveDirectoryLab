@@ -8,7 +8,10 @@ I utilized Microsoft Azure to create two virtual machines: one using Windows Ser
 <p>
 <img width="1175" height="478" alt="Screenshot 2025-12-31 013112" src="https://github.com/user-attachments/assets/46ea6cbb-01eb-4a22-82f9-1a72f7c2a4f8" />
 </p>
-To install Active Directory Domain Services, I navigated to Server Manager and clicked on add roles and features. For installation type, I selected role based installation. For the Server Selection, I selected the name of the server. For server roles, I selected Active Directory Domain Services. Then I confirmed the installation of the Active Directory Domain Services role. Next, I clicked on the flag icon within Server Manager and promoted the server to domain controller. In the Deployment Configuration wizard, I selected add a new forest and named the root domain tannervannewkirk.local. In Domain Controller options, I assigned a Domain Services Restore Mode password and proceeded through the wizard to build the domain. I restarted the machine after being prompted and I logged in using Administrator credentials.
+To install Active Directory Domain Services, I navigated to Server Manager and clicked on add roles and features. For installation type, I selected role based installation. For the Server Selection, I selected the name of the server. For server roles, I selected Active Directory Domain Services. Then I confirmed the installation of the Active Directory Domain Services role. Next, I clicked on the flag icon within Server Manager and promoted the server to domain controller. In the Deployment Configuration wizard, I selected add a new forest and named the root domain mydomain.com.  I restarted the machine after being prompted and I logged in using Administrator credentials.
+<p>
+<img width="985" height="694" alt="Screenshot 2025-12-11 214114" src="https://github.com/user-attachments/assets/f217649b-6b95-4755-96e7-5bef1aa0f73e" />
+</p>
 <br/><br/>
 I opened Active Directory Users and Computers to create a domain administrator account. Next, I right-clicked the domain name and selected new Organizational Unit and named it ADMINS. I right-clicked the Organizational Unit, selected new User and assigned the user my name. Next, I right-clicked the user, selected Properties, Member Of, Add and typed domain admins to make the account a domain administrator.
 <br/><br/>
