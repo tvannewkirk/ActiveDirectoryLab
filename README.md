@@ -23,7 +23,7 @@ To install Network Address Translation, I opened Server Manager and selected add
 To install Dynamic Host Configuration Protocol, I opened Server Manager and selected add roles and features. For Installation Type and Server Selection, I followed the same steps as before. For Server Roles, I selected DHCP and selected add features. Then I completed the wizard to install the DHCP role. This allows the domain controller to automatically assign IP addresses to client machines within the domain. Next, I opened DHCP within Tools, right-clicked on the DHCP Server, right-clicked IPV4 and selected new scope. I defined the scope as starting at 172.16.0.100 and ending at 172.16.0.200. I gave the scope a subnet mask of /24. I did not exclude any IP addresses and I specified a lease time of eight days. I selected that I want to configure DHCP options for the scope. For Default Gateway Settings, I entered the IP address of the adapter connected to the client which was 172.16.0.1 and selected add. To finish the configuration, I selected that I want to activate the scope.
 <br/><br/>
 I created another virtual machine within VirtualBox named Windows 10 Workstation and connected the network adapter to the internal network. For this virtual machine, I used the Windows 10 Enterprise .iso file I downloaded from Microsoft Evaluation Center. Next, I logged into the client virtual machine and right-clicked on the start button. Then I selected System and Rename this PC (advanced). I clicked on change and then selected domain beneath member of and typed the name of the domain. I entered Administrator credentials after being prompted and the client joined the domain successfully.
-<br />
+<br/>
 
 <h2>Languages Used</h2>
 
