@@ -29,7 +29,7 @@ I created another virtual machine within VirtualBox named Windows 10 Workstation
 
 - <b>Powershell</b>
 
-<h2>Technologies Used</h2>
+<h2>Environments Used</h2>
 
 - <b>Active Directory</b>
 - <b>Microsoft Azure</b>
