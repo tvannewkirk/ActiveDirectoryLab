@@ -22,7 +22,7 @@ I created another virtual machine within VirtualBox named Windows 10 Workstation
 <h2>Technologies Used</h2>
 
 - <b>Active Directory</b>
-- <b>Oracle VirtualBox</b>
+- <b>Microsoft Azure</b>
 - <b>Windows Server 2019</b>
 - <b>Windows 10 Enterprise</b>
 
