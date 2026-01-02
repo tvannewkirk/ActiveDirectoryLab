@@ -28,7 +28,13 @@ Next, I wanted to allow remote desktop access to Client 1 for non-admin user acc
 <img width="342" height="299" alt="Screenshot 2025-12-31 165414" src="https://github.com/user-attachments/assets/f16b5d2e-55b5-4786-902f-482a59b5d1a7" />
 </p>
 <br/><br/>
-I created another virtual machine within VirtualBox named Windows 10 Workstation and connected the network adapter to the internal network. For this virtual machine, I used the Windows 10 Enterprise .iso file I downloaded from Microsoft Evaluation Center. Next, I logged into the client virtual machine and right-clicked on the start button. Then I selected System and Rename this PC (advanced). I clicked on change and then selected domain beneath member of and typed the name of the domain. I entered Administrator credentials after being prompted and the client joined the domain successfully.
+I needed to create user accounts for my domain so I logged into DC-1 as Jane Doe, opened Powershell ISE and then I pasted a Powershell script in order to create user accounts with random names. After the script ran, the _EMPLOYEES organization unit contained 10,000 user accounts. I tested the user accounts by logging into Client 1 with one of the accounts I created.
+<p>
+<img width="937" height="652" alt="Screenshot 2025-12-11 231111" src="https://github.com/user-attachments/assets/96e885b2-4024-46df-a9ec-3f0790e3701b" />
+</p>
+<p>
+<img width="1098" height="634" alt="Screenshot 2025-12-11 230903" src="https://github.com/user-attachments/assets/c246e7bf-619b-4b98-82d9-72e7354c56d4" />
+</p>
 <br/>
 
 <h2>Languages Used</h2>
