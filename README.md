@@ -1,4 +1,4 @@
-# ActiveDirectoryLab
+# Active Directory Deployed Within the Cloud
 This tutorial demonstrates the creation of an Active Directory domain using Azure virtual machines. 
 
 <h2>Project Summary</h2>
