@@ -38,6 +38,12 @@ Search for virtual machines in the search bar and then click on create. Then, cl
 <p>
 <img width="936" height="803" alt="Screenshot 2026-01-06 010337" src="https://github.com/user-attachments/assets/94e84ada-ef66-47df-a3ac-d92d1bea6503" />
 </p>
+Use the Active-Directory-Lab resource group. Name the virtual machine DC-1. Place the virtual machine within East US 2. Use the Windows Server 2022 image. Make the username labuser and make the password Cyberlab123! Check the boxes that you would like to use an existing Windows Server license and confirming that you have an eligible license.
+</br>
+<p>
+<img width="687" height="800" alt="Screenshot 2026-01-06 011313" src="https://github.com/user-attachments/assets/07645284-411c-4bb8-b6da-ab4b1ee6e1ad" />
+</p>
+
 I utilized Microsoft Azure to create two virtual machines: one using Windows Server 2019 acting as the domain controller, and another virtual machine using Windows 10 Enterprise acting as a workstation in the domain. First, I created the domain controller virtual machine and named it DC-1. I assigned it a username of labuser and a password of Cyberlab123!. Once the virtual machine was created, I set the private IP address on the NIC to be static and I disabled the Windows Firewall in order to test ping reachability between the domain controller and the client. Then, I created the client virtual machine in Azure which used Windows 10 Enterprise as the operating system. I assigned it a username of labuser and a password of Cyberlab123! and placed it within the same virtual network as DC-1. I assigned Client 1 to use DC-1 as the DNS server. After restarting Client 1, I was able to ping DC-1.
 <br/><br/>
 <p>
