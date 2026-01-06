@@ -8,6 +8,7 @@ This tutorial demonstrates the creation of an Active Directory domain using Azur
 
 
 <h2>Operating Systems Used</h2>
+
 - <b>Windows Server 2022</b>
 - <b>Windows 10 Enterprise</b>
 
