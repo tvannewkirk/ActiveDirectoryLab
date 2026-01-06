@@ -4,7 +4,9 @@ This tutorial demonstrates the creation of an Active Directory domain using Azur
 <h2>Environments Used</h2>
 
 - <b>Active Directory</b>
-- <b>Microsoft Azure</b>
+- <b>Microsoft Azure(Virtual Machines/Compute)</b>
+- <b>Remote Desktop</b>
+- <b>Powershell</b>
 
 
 <h2>Operating Systems Used</h2>
@@ -47,8 +49,5 @@ I needed to create user accounts for my domain so I logged into DC-1 as Jane Doe
 </p>
 <br/>
 
-<h2>Languages Used</h2>
-
-- <b>Powershell</b>
 
 
