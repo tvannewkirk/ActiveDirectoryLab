@@ -16,7 +16,7 @@ This tutorial demonstrates the creation of an Active Directory domain using Azur
 
 <h2>Deployment and Configuration Steps</h2>
 
-- <b>Step 1- Create the client and domain controller virtual machines within Azure. Assign the client virtual machine the IP address of the domain controller as the DNS server</b>
+- <b>Step 1- Create the client and domain controller virtual machines within Azure. Assign the client virtual machine the IP address of the domain controller as the DNS server.</b>
 - <b>Step 2- Install Active Directory Domain Services on the domain controller virtual machine and promote it to domain controller.</b>
 - <b>Step 3- Join the client virtual machine to the domain.</b>
 - <b>Step 4- Allow remote desktop access to the client virtual machine.</b>
