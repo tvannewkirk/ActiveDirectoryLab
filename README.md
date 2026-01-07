@@ -73,7 +73,31 @@ Click on ipconfig1. Select static allocation beneath private IP address settings
 <p>
 <img width="588" height="782" alt="Screenshot 2026-01-07 140143" src="https://github.com/user-attachments/assets/3ac99a3f-0865-4177-ac08-7e973fa3f2c1" />
 </p>
-Navigate back to virtual machines by searching for it in the search bar. Copy the public IP address. 
+Navigate back to virtual machines by searching for it in the search bar. Copy the public IP address. Open the Microsoft Remote Desktop application and click on the plus symbol and then click add PC. Paste the IP address into the PC name and make the friendly name DC-1. Click add to add the connection. Click on DC-1. Enter labuser as the username and Cyberlab123! as the password.
+</br>
+<p>
+<img width="397" height="162" alt="Screenshot 2026-01-07 150323" src="https://github.com/user-attachments/assets/09dc6e7a-027a-4207-b071-77b2abf0650a" />
+</p>
+Inside the domain controller, right click the Windows icon. Click run then type wf.msc to open firewall settings.
+</br>
+<p>
+<img width="377" height="205" alt="Screenshot 2026-01-07 150619" src="https://github.com/user-attachments/assets/b33a3fcf-b9f8-42c9-952b-5d2ee75ebc18" />
+</p>
+Click on Windows Defender Firewall Properties and type 'o' to turn off the firewall. Click apply then OK.
+</br>
+<p>
+<img width="365" height="417" alt="image" src="https://github.com/user-attachments/assets/f852d5ed-927f-442f-bf50-ae9bd05d7f58" />
+</p>
+Go to virtual machines within Azure. Click on DC-1. Copy the private IP address under properties and networking.
+</br>
+<p>
+<img width="409" height="347" alt="Screenshot 2026-01-07 151217" src="https://github.com/user-attachments/assets/e6977574-0d47-4db6-ab94-ddbc133b3f52" />
+</p>
+Click on Client-1 within virtual machines. Click on the Networking tab on the left, then click on Network Settings. Click on the name for the Network Interface.
+</br>
+<p>
+<img width="484" height="93" alt="Screenshot 2026-01-07 151515" src="https://github.com/user-attachments/assets/c79da53c-6b19-4e35-9614-23a7a8bc8642" />
+</p>
 
 I utilized Microsoft Azure to create two virtual machines: one using Windows Server 2019 acting as the domain controller, and another virtual machine using Windows 10 Enterprise acting as a workstation in the domain. First, I created the domain controller virtual machine and named it DC-1. I assigned it a username of labuser and a password of Cyberlab123!. Once the virtual machine was created, I set the private IP address on the NIC to be static and I disabled the Windows Firewall in order to test ping reachability between the domain controller and the client. Then, I created the client virtual machine in Azure which used Windows 10 Enterprise as the operating system. I assigned it a username of labuser and a password of Cyberlab123! and placed it within the same virtual network as DC-1. I assigned Client 1 to use DC-1 as the DNS server. After restarting Client 1, I was able to ping DC-1.
 <br/><br/>
