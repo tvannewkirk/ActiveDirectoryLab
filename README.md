@@ -51,7 +51,7 @@ Click next:disks and do not change any settings. Click next:networking and make 
 Search for virtual machines in the search bar and then click on create. Then, click on Azure Virtual Machine.
 </br>
 <p>
-<img width="936" height="803" alt="Screenshot 2026-01-06 010337" src="https://github.com/user-attachments/assets/94e84ada-ef66-47df-a3ac-d92d1bea6503" />
+<img width="936" height="757" alt="Screenshot 2026-01-06 010337" src="https://github.com/user-attachments/assets/a9fbc90c-5e71-4cce-824f-bccd659558e4" />
 </p>
 Assign the virtual machine to the Active-Directory-Lab resource group. Name the virtual machine Client-1. Place the virtual machine in the East US 2 region. Select Windows 10 Pro for the image. Make the username labuser and the password Cyberlab123!. Check the box that you have a Windows 10 license and then click on next:disks.
 </br>
