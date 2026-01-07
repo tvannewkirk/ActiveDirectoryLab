@@ -53,6 +53,27 @@ Search for virtual machines in the search bar and then click on create. Then, cl
 <p>
 <img width="936" height="803" alt="Screenshot 2026-01-06 010337" src="https://github.com/user-attachments/assets/94e84ada-ef66-47df-a3ac-d92d1bea6503" />
 </p>
+Assign the virtual machine to the Active-Directory-Lab resource group. Name the virtual machine Client-1. Place the virtual machine in the East US 2 region. Select Windows 10 Pro for the image. Make the username labuser and the password Cyberlab123!. Check the box that you have a Windows 10 license and then click on next:disks.
+</br>
+<p>
+<img width="688" height="824" alt="Screenshot 2026-01-06 012632" src="https://github.com/user-attachments/assets/b9e12d28-a9df-434b-a148-43c5467b4b1f" />
+</p>
+Click on next:networking. Assign the virtual machine to the Active-Directory-VNet network. Assign the virtual machine the default subnet. Click on review+create. Click on create to deploy the virtual machine.
+</br>
+<p>
+<img width="759" height="853" alt="Screenshot 2026-01-07 135052" src="https://github.com/user-attachments/assets/8a022646-ebd7-4101-be62-15a599525cdb" />
+</p>
+Search virtual machines in the search bar and click on virtual machines. Click on DC-1. Click on the networking tab on the left and then network settings. Click on the network interface/IP configuration link.
+</br>
+<p>
+<img width="1140" height="752" alt="Screenshot 2026-01-07 135902" src="https://github.com/user-attachments/assets/b52f86a5-644e-4c31-8a72-4371a1c45063" />
+</p>
+Click on ipconfig1. Select static allocation beneath private IP address settings. Then click save.
+</br>
+<p>
+<img width="588" height="782" alt="Screenshot 2026-01-07 140143" src="https://github.com/user-attachments/assets/3ac99a3f-0865-4177-ac08-7e973fa3f2c1" />
+</p>
+Navigate back to virtual machines by searching for it in the search bar. Copy the public IP address. 
 
 I utilized Microsoft Azure to create two virtual machines: one using Windows Server 2019 acting as the domain controller, and another virtual machine using Windows 10 Enterprise acting as a workstation in the domain. First, I created the domain controller virtual machine and named it DC-1. I assigned it a username of labuser and a password of Cyberlab123!. Once the virtual machine was created, I set the private IP address on the NIC to be static and I disabled the Windows Firewall in order to test ping reachability between the domain controller and the client. Then, I created the client virtual machine in Azure which used Windows 10 Enterprise as the operating system. I assigned it a username of labuser and a password of Cyberlab123! and placed it within the same virtual network as DC-1. I assigned Client 1 to use DC-1 as the DNS server. After restarting Client 1, I was able to ping DC-1.
 <br/><br/>
