@@ -66,7 +66,7 @@ Click on next:networking. Assign the virtual machine to the Active-Directory-VNe
 Search virtual machines in the search bar and click on virtual machines. Click on DC-1. Click on the networking tab on the left and then network settings. Click on the network interface/IP configuration link.
 </br>
 <p>
-<img width="1140" height="752" alt="Screenshot 2026-01-07 135902" src="https://github.com/user-attachments/assets/b52f86a5-644e-4c31-8a72-4371a1c45063" />
+<img width="1140" height="382" alt="Screenshot 2026-01-07 135902" src="https://github.com/user-attachments/assets/7dd7652e-b5fd-4f0f-87f2-286f5c9a6ed3" />
 </p>
 Click on ipconfig1. Select static allocation beneath private IP address settings. Then click save.
 </br>
