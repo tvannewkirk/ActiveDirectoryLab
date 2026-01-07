@@ -98,40 +98,46 @@ Click on Client-1 within virtual machines. Click on the Networking tab on the le
 <p>
 <img width="484" height="93" alt="Screenshot 2026-01-07 151515" src="https://github.com/user-attachments/assets/c79da53c-6b19-4e35-9614-23a7a8bc8642" />
 </p>
+Click on the DNS Servers tab on the left. Click on Custom under DNS servers. Paste the Private IP Address for DC-1. Click on Save.
+</br>
+<p>
+<img width="684" height="488" alt="Screenshot 2026-01-07 152640" src="https://github.com/user-attachments/assets/33a55994-7a77-45e9-a888-9611b5ad88a9" />
+</p>
+Navigate back to virtual machines within Azure. Check the box next to Client-1. Click on Restart and then click Yes.
+</br>
+<p>
+<img width="770" height="113" alt="Screenshot 2026-01-07 153013" src="https://github.com/user-attachments/assets/2f7446cb-4e6b-4dc2-95d9-2952ca659739" />
+</p>
+Navigate back to virtual machines by searching for it in the search bar. Copy the public IP address for Client-1. Open the Microsoft Remote Desktop application and click on the plus symbol and then click add PC. Paste the IP address into the PC name and make the friendly name Client-1. Click add to add the connection. Click on Client-1. Enter labuser as the username and Cyberlab123! as the password.
+</br>
+<p>
+<img width="404" height="157" alt="image" src="https://github.com/user-attachments/assets/27eccf8a-d4e8-4a07-aa5e-28cf48d3df65" />
+</p>
+Navigate to virtual machines within Azure. Click on DC-1. Copy the Private IP Address under Networking.
+</br>
+<p>
+<img width="404" height="233" alt="Screenshot 2026-01-07 153706" src="https://github.com/user-attachments/assets/2a42d049-c43b-42cf-8236-543b0a6a8732" />
+</p>
+Open the Client-1 Remote Desktop connection. Click on the Windows icon and type Powershell and open it.
+</br>
+<p>
+<img width="716" height="450" alt="Screenshot 2026-01-07 153913" src="https://github.com/user-attachments/assets/5b10dfb0-12d0-4730-a5cd-f36fda10fa7f" />
+</p>
+Type ping and paste the IP address of DC-1. Observe the results.
+</br>
+<p>
+<img width="907" height="403" alt="Screenshot 2026-01-07 154038" src="https://github.com/user-attachments/assets/27e74c32-72d9-4e3e-a8ae-b19eb3a432da" />
+</p>
+Type ipconfig /all inside of Powershell. Observe the results. DC-1 is the DNS Server for Client-1.
+</br>
+<p>
+<img width="1260" height="571" alt="Screenshot 2026-01-07 154310" src="https://github.com/user-attachments/assets/4538aab0-a1f5-4aad-a942-f2412e085339" />
+</p>
 
-I utilized Microsoft Azure to create two virtual machines: one using Windows Server 2019 acting as the domain controller, and another virtual machine using Windows 10 Enterprise acting as a workstation in the domain. First, I created the domain controller virtual machine and named it DC-1. I assigned it a username of labuser and a password of Cyberlab123!. Once the virtual machine was created, I set the private IP address on the NIC to be static and I disabled the Windows Firewall in order to test ping reachability between the domain controller and the client. Then, I created the client virtual machine in Azure which used Windows 10 Enterprise as the operating system. I assigned it a username of labuser and a password of Cyberlab123! and placed it within the same virtual network as DC-1. I assigned Client 1 to use DC-1 as the DNS server. After restarting Client 1, I was able to ping DC-1.
-<br/><br/>
-<p>
-<img width="1175" height="478" alt="Screenshot 2025-12-31 013112" src="https://github.com/user-attachments/assets/46ea6cbb-01eb-4a22-82f9-1a72f7c2a4f8" />
-</p>
-To install Active Directory Domain Services, I navigated to Server Manager and clicked on add roles and features. For installation type, I selected role based installation. For the Server Selection, I selected the name of the server. For server roles, I selected Active Directory Domain Services. Then I confirmed the installation of the Active Directory Domain Services role. Next, I clicked on the flag icon within Server Manager and promoted the server to domain controller. In the Deployment Configuration wizard, I selected add a new forest and named the root domain mydomain.com.  I restarted the machine after being prompted and I logged in using Administrator credentials.
-<p>
-<img width="985" height="694" alt="Screenshot 2025-12-11 214114" src="https://github.com/user-attachments/assets/f217649b-6b95-4755-96e7-5bef1aa0f73e" />
-</p>
-<br/><br/>
-I opened Active Directory Users and Computers to create an Organizational Unit called _EMPLOYEES. Next, I created another Organizational Unit and named it _ADMINS. I right-clicked the Organizational Unit, selected new User and called the user Jane Doe. I assigned the account a username of jane_admin and a password of Cyberlab123!. Next, I right-clicked the user, selected Properties, Member Of, Add and typed domain admins to make the account a domain administrator.
-<p>
-<img width="1170" height="597" alt="Screenshot 2025-12-31 015025" src="https://github.com/user-attachments/assets/7599d45e-671b-47e3-8326-c60469b365a3" />
-</p>
-<br/><br/>
-Next, I logged into the Client 1 virtual machine and joined it to the mydomain.com domain by opening settings, clicking on about, then clicking on rename this PC. After this, I clicked change in the computer name tab and I entered mydomain.com in the domain field. Then, I logged in using the Jane Doe admin account within the mydomain.com context and the client joined to the domain.
-<p>
-<img width="693" height="486" alt="Screenshot 2025-12-31 162941" src="https://github.com/user-attachments/assets/980b8011-25ae-4e46-a010-efe835370375" />
-</p>
-<br/><br/>
-Next, I wanted to allow remote desktop access to Client 1 for non-admin user accounts for troubleshooting purposes. I decided to configure this without the use of group policy. In order to accomplish this, I logged into Client 1 as Jane Doe and opened System Properties and clicked on Remote Desktop. Then, I allowed domain users access by clicking "Select Users that can Remotely Access this PC" and then clicking add. I typed domain users into the field and clicked check names and then clicked OK.
-<p>
-<img width="342" height="299" alt="Screenshot 2025-12-31 165414" src="https://github.com/user-attachments/assets/f16b5d2e-55b5-4786-902f-482a59b5d1a7" />
-</p>
-<br/><br/>
-I needed to create user accounts for my domain so I logged into DC-1 as Jane Doe, opened Powershell ISE and then I pasted a Powershell script in order to create user accounts with random names. After the script ran, the _EMPLOYEES organization unit contained 10,000 user accounts. I tested the user accounts by logging into Client 1 with one of the accounts I created.
-<p>
-<img width="937" height="652" alt="Screenshot 2025-12-11 231111" src="https://github.com/user-attachments/assets/96e885b2-4024-46df-a9ec-3f0790e3701b" />
-</p>
-<p>
-<img width="1098" height="634" alt="Screenshot 2025-12-11 230903" src="https://github.com/user-attachments/assets/c246e7bf-619b-4b98-82d9-72e7354c56d4" />
-</p>
-<br/>
+
+
+
+
 
 
 
