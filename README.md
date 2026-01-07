@@ -36,7 +36,7 @@ Create a virtual network using the Active-Directory-Lab resource group. This vir
 Search for virtual machines in the search bar and then click on create. Then, click on Azure Virtual Machine.
 </br>
 <p>
-<img width="936" height="803" alt="Screenshot 2026-01-06 010337" src="https://github.com/user-attachments/assets/94e84ada-ef66-47df-a3ac-d92d1bea6503" />
+<img width="936" height="757" alt="Screenshot 2026-01-06 010337" src="https://github.com/user-attachments/assets/3cc544f8-1cf3-4703-9615-2987f227e15b" />
 </p>
 Use the Active-Directory-Lab resource group. Name the virtual machine DC-1. Place the virtual machine within East US 2. Use the Windows Server 2022 image. Make the username labuser and make the password Cyberlab123! Check the boxes that you would like to use an existing Windows Server license and confirming that you have an eligible license.
 </br>
