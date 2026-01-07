@@ -116,7 +116,7 @@ Navigate back to virtual machines by searching for it in the search bar. Copy th
 Navigate to virtual machines within Azure. Click on DC-1. Copy the Private IP Address under Networking.
 </br>
 <p>
-<img width="404" height="233" alt="Screenshot 2026-01-07 153706" src="https://github.com/user-attachments/assets/2a42d049-c43b-42cf-8236-543b0a6a8732" />
+<img width="404" height="163" alt="Screenshot 2026-01-07 153706" src="https://github.com/user-attachments/assets/755c6a17-560b-4f8f-80b1-eddaa2b47b82" />
 </p>
 Open the Client-1 Remote Desktop connection. Click on the Windows icon and type Powershell and open it.
 </br>
