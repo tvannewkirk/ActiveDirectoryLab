@@ -71,7 +71,7 @@ Search virtual machines in the search bar and click on virtual machines. Click o
 Click on ipconfig1. Select static allocation beneath private IP address settings. Then click save.
 </br>
 <p>
-<img width="588" height="782" alt="Screenshot 2026-01-07 140143" src="https://github.com/user-attachments/assets/3ac99a3f-0865-4177-ac08-7e973fa3f2c1" />
+<img width="588" height="436" alt="Screenshot 2026-01-07 140143" src="https://github.com/user-attachments/assets/faab9183-64d6-4aac-9ad2-38a8083165cd" />
 </p>
 Navigate back to virtual machines by searching for it in the search bar. Copy the public IP address. Open the Microsoft Remote Desktop application and click on the plus symbol and then click add PC. Paste the IP address into the PC name and make the friendly name DC-1. Click add to add the connection. Click on DC-1. Enter labuser as the username and Cyberlab123! as the password.
 </br>
