@@ -133,6 +133,100 @@ Type ipconfig /all inside of Powershell. Observe the results. DC-1 is the DNS Se
 <p>
 <img width="1260" height="571" alt="Screenshot 2026-01-07 154310" src="https://github.com/user-attachments/assets/4538aab0-a1f5-4aad-a942-f2412e085339" />
 </p>
+Open the DC-1 Remote Desktop connection. Enter the username as labuser and the password as Cyberlab123!.
+</br>
+<p>
+<img width="404" height="157" alt="Screenshot 2026-01-07 153323" src="https://github.com/user-attachments/assets/4ee6c65a-3eed-4eeb-bfd7-8bfda97fa6c3" />
+</p>
+Click on the Windows icon and then click on Server Manager. Click on add roles and features.
+</br>
+<p>
+<img width="1119" height="801" alt="Screenshot 2026-01-07 174243" src="https://github.com/user-attachments/assets/04f007d8-aac2-4348-b0e2-1863a0022fec" />
+</p>
+Click next three times within the wizard. In the Server Roles section click on Active Directory Domain Services. Click on next.
+</br>
+<p>
+<img width="725" height="511" alt="Screenshot 2026-01-07 174531" src="https://github.com/user-attachments/assets/27571d45-e5a6-48a8-a45d-1c1950c8b97e" />
+</p>
+Click on next two more times. In the Confirmation section, click on Restart the Destination Server if Required. Click on install.
+</br>
+<p>
+<img width="721" height="512" alt="image" src="https://github.com/user-attachments/assets/d339ff58-a4b9-4e00-9361-27f841323161" />
+</p>
+Within Server Manager, click on the flag icon at the top right. Click Promote this Server to Domain Controller.
+</br>
+<p>
+<img width="373" height="298" alt="Screenshot 2026-01-07 175031" src="https://github.com/user-attachments/assets/839dcd2d-e8fc-4207-bbf7-2c247b01cd80" />
+</p>
+Select add a new forest. Enter the root domain name as mydomain.com. Click on next.
+</br>
+<p>
+<img width="696" height="507" alt="Screenshot 2026-01-07 175348" src="https://github.com/user-attachments/assets/82443a9b-8874-4dbf-a41c-69343eb6dbf6" />
+</p>
+Make the Directory Services Restore Mode password Password1. Click on next.
+</br>
+<p>
+<img width="690" height="508" alt="image" src="https://github.com/user-attachments/assets/1d714f29-fbc7-4e41-a061-e27ed79f0b98" />
+</p>
+Click on Prerequisite Checks on the left side and then click install.
+</br>
+<p>
+<img width="694" height="515" alt="Screenshot 2026-01-07 210848" src="https://github.com/user-attachments/assets/a5047da5-d78a-46e3-a816-0eb45e57eb55" />
+</p>
+After the virtual machine restarts, click on the DC-1 remote desktop connection and login using the mydomain.com\labuser username and Cyberlab123! password.
+</br>
+<p>
+<img width="396" height="142" alt="Screenshot 2026-01-07 211541" src="https://github.com/user-attachments/assets/b8fc6934-4264-45cf-87a4-526a4dc3dd45" />
+</p>
+Click on the Windows icon. Then click on Administrative Tools and Active Directory Users and Computers.
+</br>
+<p>
+<img width="593" height="583" alt="Screenshot 2026-01-07 212124" src="https://github.com/user-attachments/assets/d152ce5b-b5d9-4ffb-81a9-cda12b73b049" />
+</p>
+Click on the arrow next to mydomain.com on the left side. Right-click mydomain.com, mouse over new and click on Organizational Unit. Name the Organizational Unit _EMPLOYEES. Click OK.
+</br>
+<p>
+<img width="783" height="595" alt="image" src="https://github.com/user-attachments/assets/a00aa41c-ac6d-459c-a9d2-390eb0080bd1" />
+</p>
+Right-click mydomain.com and mouse over new and click on Organizational Unit. Name the Organizational Unit _ADMINS. Click OK.
+</br>
+<p>
+<img width="787" height="531" alt="image" src="https://github.com/user-attachments/assets/faa096a4-01bd-49a6-b8c3-65c5e04472a5" />
+</p>
+Click on the _ADMINS Organizational Unit. Right-click in the blank area, mouse over new and select user. Name the user Jane Doe. Make the user logon name jane_admin. Click next.
+</br>
+<p>
+<img width="790" height="597" alt="Screenshot 2026-01-07 213121" src="https://github.com/user-attachments/assets/63b3a7f2-0790-4aab-825a-ba289e344a02" />
+</p>
+Make the password Cyberlab123!. Uncheck user must change password on next logon. For lab purposes, select password never expires. Click on next. Click on finish.
+</br>
+<p>
+<img width="784" height="588" alt="Screenshot 2026-01-07 213347" src="https://github.com/user-attachments/assets/9c87da9d-df03-47ff-a98d-4aa1c426f7a9" />
+</p>
+Right-click Jane Doe's account and select properties. Select member of. Click add and type domain admins into the blank field and select check names. Click OK.
+</br>
+<p>
+<img width="562" height="309" alt="Screenshot 2026-01-07 213730" src="https://github.com/user-attachments/assets/9eeabe1c-c4d0-45e1-bb79-af7e2ef4c666" />
+</p>
+Right-click the windows icon and select run. Type logoff and click OK to log out.
+</br>
+<p>
+<img width="377" height="203" alt="Screenshot 2026-01-07 214044" src="https://github.com/user-attachments/assets/46f9962c-5f82-49d9-8d5d-b6262f2db729" />
+</p>
+Re-open the connection to DC-1. Enter mydomain.com\jane_admin as the username and Cyberlab123! as the password.
+</br>
+<p>
+<img width="406" height="216" alt="Screenshot 2026-01-07 214235" src="https://github.com/user-attachments/assets/649211f3-3888-49c5-b13d-7a072fd273e7" />
+</p>
+
+
+
+
+
+
+
+
+
 
 
 
