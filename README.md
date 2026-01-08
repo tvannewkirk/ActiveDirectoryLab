@@ -218,6 +218,29 @@ Re-open the connection to DC-1. Enter mydomain.com\jane_admin as the username an
 <p>
 <img width="406" height="216" alt="Screenshot 2026-01-07 214235" src="https://github.com/user-attachments/assets/649211f3-3888-49c5-b13d-7a072fd273e7" />
 </p>
+Open the Remote Desktop connection to the Client-1 virtual machine. Enter labuser as the username and Cyberlab123! as the password.
+</br>
+<p>
+<img width="397" height="162" alt="Screenshot 2026-01-07 150323" src="https://github.com/user-attachments/assets/dffb4c6b-f2df-43ee-bb40-2a1daa2287b4" />
+</p>
+Right-click the Windows icon and select System. Click on Rename this PC (advanced). Click on change within the Computer Name tab. Select domain under member of and enter mydomain.com and click OK.
+</br>
+<p>
+<img width="374" height="428" alt="image" src="https://github.com/user-attachments/assets/1a2e5da1-732a-4162-9bcb-fb7fe5eebcff" />
+</p>
+Enter mydomain.com\jane_admin as the username and Cyberlab123! as the password. Click OK. Client-1 is now joined to the domain. Restart Client-1.
+</br>
+<p>
+<img width="417" height="269" alt="Screenshot 2026-01-07 215514" src="https://github.com/user-attachments/assets/8a06db05-215f-41ee-b685-2fc4b0bcec9f" />
+</p>
+<p>
+<img width="274" height="137" alt="Screenshot 2026-01-07 215610" src="https://github.com/user-attachments/assets/1d646ae4-2d89-4f94-850f-c477aea9e8e5" />
+</p>
+In the DC-1 connection, search Active Directory Users and Computers in the search bar and open it. Click the arrow next to mydomain.com and click on Computers and verify that Client-1 is present.
+</br>
+<p>
+<img width="928" height="447" alt="Screenshot 2026-01-07 220004" src="https://github.com/user-attachments/assets/c64b0100-62a5-4ebd-8f25-d31d11927730" />
+</p>
 
 
 
