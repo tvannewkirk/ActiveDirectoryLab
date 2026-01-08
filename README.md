@@ -259,7 +259,7 @@ Open the connection to Client-1. Log in using mydomain.com\jane_admin as the use
 Right-click the Windows icon and select System. Click Remote Desktop on the right. Click Select Users that can Remotely Access this Account under User accounts. Click Add. Enter domain users and click check names. Click OK.
 </br>
 <p>
-<img width="274" height="137" alt="Screenshot 2026-01-07 215610" src="https://github.com/user-attachments/assets/a5700fee-cb39-4e8c-954e-7ffb8251fab4" />
+<img width="414" height="228" alt="Screenshot 2026-01-07 221713" src="https://github.com/user-attachments/assets/203ed520-6733-46d5-982d-bd4e123a1196" />
 </p>
 
 
