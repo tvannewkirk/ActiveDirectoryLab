@@ -241,6 +241,26 @@ In the DC-1 connection, search Active Directory Users and Computers in the searc
 <p>
 <img width="928" height="447" alt="Screenshot 2026-01-07 220004" src="https://github.com/user-attachments/assets/c64b0100-62a5-4ebd-8f25-d31d11927730" />
 </p>
+Right-click mydomain.com. Mouse over new and select Organizational Unit. Name the Organizational Unit _CLIENTS and click OK.
+</br>
+<p>
+<img width="555" height="478" alt="Screenshot 2026-01-07 220408" src="https://github.com/user-attachments/assets/2e58b63f-49ed-4a81-9492-2c158d25fc1a" />
+</p>
+Click on the Computers Organizational Unit and drag the Client-1 computer into the _CLIENTS Organizational Unit.
+</br>
+<p>
+<img width="1091" height="550" alt="Screenshot 2026-01-07 220604" src="https://github.com/user-attachments/assets/789e3adf-4b8a-438c-ad1e-7e8a34677bb3" />
+</p>
+Open the connection to Client-1. Log in using mydomain.com\jane_admin as the username and Cyberlab123! as the password.
+</br>
+<p>
+<img width="396" height="142" alt="Screenshot 2026-01-07 211541" src="https://github.com/user-attachments/assets/08dfe3aa-7af5-4872-98f6-d7b22e35aaa5" />
+</p>
+Right-click the Windows icon and select System. Click Remote Desktop on the right. Click Select Users that can Remotely Access this Account under User accounts. Click Add. Enter domain users and click check names. Click OK.
+</br>
+<p>
+<img width="274" height="137" alt="Screenshot 2026-01-07 215610" src="https://github.com/user-attachments/assets/a5700fee-cb39-4e8c-954e-7ffb8251fab4" />
+</p>
 
 
 
