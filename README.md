@@ -261,13 +261,29 @@ Right-click the Windows icon and select System. Click Remote Desktop on the righ
 <p>
 <img width="414" height="228" alt="Screenshot 2026-01-07 221713" src="https://github.com/user-attachments/assets/203ed520-6733-46d5-982d-bd4e123a1196" />
 </p>
-
-
-
-
-
-
-
+Open the DC-1 connection. Click the search bar and type Powershell ISE. Open Powershell ISE by right-clicking and opening as Administrator.
+</br>
+<p>
+<img width="714" height="560" alt="Screenshot 2026-01-07 222441" src="https://github.com/user-attachments/assets/814be4d2-ad3b-4ef8-88d3-4d839257e03c" />
+</p>
+Open the Powershell script which creates the user accounts. Copy the contents. In Powershell ISE, click the file icon at the top left to create a new script. Use ctrl+s and save the file to the Desktop. Name the file create-users.
+</br>
+<p>
+<img width="818" height="508" alt="Screenshot 2026-01-07 222837" src="https://github.com/user-attachments/assets/18288803-1004-44b3-b564-e1d1a2f03971" />
+</p>
+Paste the script into the new file. Click the play button to run the script. Click OK.
+</br>
+<p>
+<img width="437" height="113" alt="Screenshot 2026-01-07 223122" src="https://github.com/user-attachments/assets/fb8ef527-f943-4abf-9624-39c85a019e28" />
+</p>
+In the Client-1 connection, log out of Jane Doe's account. Re-open the connection and log in using mydomain.com\(new user's name) and Password1 as the password. You are now logged into the domain using one of the created accounts.
+</br>
+<p>
+<img width="937" height="652" alt="Screenshot 2025-12-11 231111" src="https://github.com/user-attachments/assets/bc101072-2385-4835-818a-d16a08ead412" />
+</p>
+<p>
+<img width="1098" height="634" alt="Screenshot 2025-12-11 230903" src="https://github.com/user-attachments/assets/eb8373db-717f-4e29-9bd3-2eabaef3ad7a" />
+</p>
 
 
 
